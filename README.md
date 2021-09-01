@@ -2,9 +2,7 @@
 
 #### This application is checking if entered text follows haiku rules.
 
-#### By Roman Kolivashko
-#### By Ben Wilson
-#### By Mark Chang
+#### By Roman Kolivashko, Ben Wilson, Mark Chang
 
 ## Technologies Used
 
@@ -14,8 +12,8 @@
 * _Jest_
 * _JavaScript_
 * _NPM_
-* _Babel
-* _Linter
+* _Babel_
+* _Linter_
 ## Description
 
 ## Setup/Installation Requirements
