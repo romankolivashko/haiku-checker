@@ -21,7 +21,6 @@ export default class Haiku {
       return false;
     }
   }
-  
 }
 
 function countSyllables(word) {
