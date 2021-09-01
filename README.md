@@ -1,43 +1,18 @@
-# (Application Name)
+make a Haiku object
+contains Haiku.line1, .line2, .line3
+code to run on a line should:
+break the line into an array of words using .split(" ") 
 
-#### (Brief Description of Application)
+let arr = ["I", "am", "very", "sad"]
+run forEach on array, 
 
-#### By (Your Name Here)
+if arr[0]
 
-## Technologies Used
+1. identify syllables by counting groups of vowels, maybe use regex
+2. ignore silent e's
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+An "E" is considered silent if it's alone at the end of the word, preceded by one (or more) consonant(s) and there is at least one other syllable in the word. Examples: "age", "ar·range", "con·crete"; but not in "she", "blue", "de·gree".
 
-## Description
-
-## Setup/Installation Requirements
-
-1. Click on "Use This Template" button at top of GitHub repository. 
-2. Name your repository (ex. my-project)
-3. Clone the repository: $ git clone https://github.com/account/my-project
-4. Navigate to the my-project/ directory on your computer
-5. Open with your preferred text editor to view the code base
-6. Update code to match name of project:
-   * webpac.config.js - line 19
-   * package.json - line 2
-   * package-lock.json - line 2
-   * index.html - line 4
-7. To start a development server and view the project in the browser:
-   * Navigate to my-project/ in your command line
-   * Run the command `npm install` to install dependencies
-   * Optionally, run the commmand `npm run build` to make a bundle of the files
-   * Finally, run the command `npm run start` to start a development server
- 
-To run tests, navigate to my-project/ in your terminal and run the command `npm run test`
-
-## Known Bugs
-
-* _Any known issues_
-* _should go here_
-
-## License
-
-## Contact Information
+3. convert leftover string to an array
+4. count array elements (array.length) to determine syllable count
+5. return true or false per line if syllable count is correct or not
